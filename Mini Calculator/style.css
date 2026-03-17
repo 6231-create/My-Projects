@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+   linear-gradient(rgba(20,30,48,0.7), rgba(36,59,85,0.7)),
+  url("https://png.pngtree.com/thumb_back/fh260/background/20210817/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-image_763689.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial;
+}
+
+.calculator {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #000000;
+  color: rgb(232, 224, 6);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #c20386;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0b0b72;
+  box-shadow: 0 0 10px #00ffcc,
+              0 0 20px #00ffcc,
+              0 0 30px #00ffcc;;
+  transform: scale(1.05);
+}
+
+.zero {
+  grid-column: span 2;
+}

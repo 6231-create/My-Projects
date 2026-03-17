@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url("https://img.freepik.com/free-photo/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_181624-57587.jpg?semt=ais_hybrid&w=740&q=80") no-repeat center/cover;
+}
+
+
+/* Glass effect container */
+.container {
+  padding: 40px 80px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon glowing text */
+#time {
+  font-size: 70px;
+  color: #00fff7;
+  letter-spacing: 50px;
+
+}
+
+/* Glow animation */
+@keyframes glow {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #00fff7,
+      0 0 10px #00fff7,
+      0 0 20px #00fff7;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #00fff7,
+      0 0 20px #00fff7,
+      0 0 40px #00c3ff;
+  }
+}
+
+#time {
+  animation: glow 1s infinite alternate;
+}
